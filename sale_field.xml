@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data>
+<menuitem parent="sale.menu_sale_root" id="menu_vit_quotation_report" name="Report" sequence="10" icon="STOCK_OPEN"/>
+<!-- product -->
+<wizard id="wzd_vit_quotation_by_product" menu="False" model="sale.order" name="vit_quotation_report.product.quotation" string="Quotation by Product"/>
+<menuitem icon="STOCK_PRINT" action="wzd_vit_quotation_by_product" id="menu_quotation_by_product" parent="menu_vit_quotation_report" type="wizard"/>  
+
+<!-- supplier -->
+<wizard id="wzd_vit_quotation_by_supplier" menu="False" model="sale.order" name="vit_quotation_report.supplier.quotation" string="Quotation by Supplier"/>
+<menuitem icon="STOCK_PRINT" action="wzd_vit_quotation_by_supplier" id="menu_quotation_by_supplier" parent="menu_vit_quotation_report" type="wizard"/>
+
+<!-- product category -->
+<wizard id="wzd_vit_quotation_by_product_cat" menu="False" model="sale.order" name="vit_quotation_report.product.category.quotation" string="Quotation by Product Category"/>
+<menuitem icon="STOCK_PRINT" action="wzd_vit_quotation_by_product_cat" id="menu_vit_quotation_by_product_cat" parent="menu_vit_quotation_report" type="wizard"/>
+  
+<!-- customer -->    
+<wizard id="wzd_vit_quotation_by_customer" menu="False" model="sale.order" name="vit_quotation_report.customer.quotation" string="Quotation by Customer"/>
+<menuitem icon="STOCK_PRINT" action="wzd_vit_quotation_by_customer" id="menu_vit_quotation_by_customer" parent="menu_vit_quotation_report" type="wizard"/>
+
+<!-- user -->  
+<wizard id="wzd_vit_quotation_by_user" menu="False" model="sale.order" name="vit_quotation_report.user.quotation" string="Quotation by User"/>
+<menuitem icon="STOCK_PRINT" action="wzd_vit_quotation_by_user" id="menu_vit_quotation_by_user" parent="menu_vit_quotation_report" type="wizard"/>
+    	
+</data>
+</openerp>
